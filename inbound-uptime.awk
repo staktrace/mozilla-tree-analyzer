@@ -35,7 +35,7 @@ BEGIN {
             opened = timestamp($2)
             open = 1
         }
-    } else if ($3 == "closed") {
+    } else if ($3 == "closed" && match(tolower($0), tolower(filter))) {
         if (open == 0) {
             # closed multiple times in a row, get the earliest timestamp
             closed = timestamp($2)
