@@ -1,0 +1,74 @@
+ab03ce8e20c7 Backed out changeset 6d29c583d5c0 due to incorrect commit message.
+3a26ebb943ea Backed out changeset 1d41c64ab235 (bug 860326) for robocop crashes.
+e92a339cb4bc Backed out 2 changesets (bug 734691) for leaks.
+3b1f2d2e287d Backout changeset baf184596a7b for build errors on a CLOSED TREE.
+712e8ba8219b Backed out changeset 76f7d7963692 (bug 861912) for debug mochitest b-c orange.
+7c596ffafa29 Backout changesets 3581b3d60886, cff9eab960e3, d390c8c21882 for Android foreignObject-fixedpos-01.html failures on a CLOSED TREE.
+00c31be62f62 Backout 66c01cdf30d2 (bug 862158) for text-layout-08.svg failure. (CLOSED TREE)
+4828dd617269 Backout 64abee9b00f1 (bug 841363) for suspected test_bug375003-1.html failure. (CLOSED TREE)
+1cadf6ac01be Backout changeset 0ff383d4a899 (bug 861453) for universal builds bustage
+b42c56707a7a Backout 5f7a95537199 (bug 846122).
+119c05c4437e Backout 8ba06fb1bba0 (bug 768288).
+7f7ce6fa2cbb Bug 813418 - Backout 95add3006aaf due to bustage CLOSED TREE
+f75ceb00fca9 Bug 813418 - Backout 2f47fcb0a648 due to bustage CLOSED TREE
+6d5ac3930709 Bug 813418 - Backout 7bcdee03b55 due to bustage CLOSED TREE
+2d8ab5822d60 Bug 813418 - Backout fe8c74e402bc due to bustage CLOSED TREE
+732e0bc6aff2 Backed out 2 changesets (bug 860572) for OSX build breakage
+369df88bbdbb Back out ecd327272240 (bug 733712) for Linux oth assertions
+665d1b10c562 Backed out changeset bfd7c7290cab (bug 851214) for bad comment
+b85daec2b90c Back out a5a1dd3bd8ae (bug 860029) for stupidorange
+786614886674 Back out e6f337d218b4 (bug 768288) for bug648747.js jit-test failures
+c2206d092a04 Backed out changeset c2449e6144d1 (wrong bug #)
+adb1bbf756b9 Back out 104ba36f44c0 (bug 845596) for jsreftest assertions
+7c09ade1b900 Back out f21835504604 (bug 860338) for build bustage
+a18b89e5b3e6 Back out 390be7c3dd3a (bug 853301) and 029a6cc8ca0a (bug 724533) for b2g desktop Windows build bustage and Windows xpcshell orange
+7adc5fa8398c Backed out changeset d757eeebcc43. r=bustage CLOSED TREE
+d85fd0be102d Backed out changeset 8ce65f4eb1ba (bug 820170) for suspicion of causing bug 860903 on a CLOSED TREE.
+1f956ddfa7a4 Back out bug 860591 (rev 8488f69f8f91) because it causes orange, resulting in a CLOSED TREE
+6d92a2e39c77 Back out 5bf9771e1a28 (bug 860029) for bustage
+94ad8254eb26 backout 76c52c1ca95a bug 859446 because its suspected of regressing talos on win pgo
+4e471f497482 Backed out 2 changesets (bug 850362, bug 600307) for Windows XP leaks on a CLOSED TREE.
+e7cb5c6e47f0 Backed out changeset 5e573a8f7ce1 (bug 856358) for bustage on a CLOSED TREE.
+f23121d10690 Backed out changeset f556245d6da1 (bug 856848) for build bustage on a CLOSED TREE.
+eefef98b23fb Backed out changesets a550dadafa30 and 315f6b451d07 (bug 857884) for mochitest failures on a CLOSED TREE.
+ed781d87fc46 Backed out changeset 2ceca4816688 (bug 854614) for intermittent mochitest-a11y crashes on a CLOSED TREE.
+afc39d8b649a Backed out 17 changesets (bug 566746, bug 697377) for frequent OSX debug mochitest-5 crashes.
+bfcd471a1ed9 Backed out changeset b6612169995a (bug 539427) for bustage.
+4705e2c47b2b Backed out changeset d0e0bc4ccff0 (bug 859446) for suspicion of Windows PGO bustage on a CLOSED TREE.
+5f7ef72c2c00 Backout cb37a2ae805f on a CLOSED TREE
+ee168b506dd7 Backout e090321a025c
+c4787f90e6b8 Backout f7814e2bc3dd
+1ae57a618325 Backout 138ea79ea71a (bug 854288) and aa9b27b090db (bug 852032) for xpcshell bustage on a CLOSED TREE
+a28728d22f22 Backed out changeset 9b9a5c42fb46 (bug 859601) for bustage on a CLOSED TREE.
+8e5a1410e6fe Backed out changeset 366758c34e31 (bug 859591) for xpcshell failures.
+2e36cebdefe7 Backed out changeset a3bdc9a0259f (bug 854288) for xpcshell failures.
+850ae0bd0778 Backed out changeset b37f8a4ef976 (bug 859077) for landing with the wrong bug number.
+2ad1b71d0c32 Back out a3a31fc4429a (bug 738818) since the thing it was following-up is coming out
+278ea1d0e072 Back out ec6dd0cc8053:3c55e92d87a6 (bug 738818) for being on top of bustage, and b50153f9e011 (bug 819493) for bustage
+b467e7ef9d56 Back out Bug 846137 for burning this CLOSED TREE.
+8d236795202e Back out bug 859894 to open this CLOSED TREE.
+0d95f4b59178 Backed out changeset 3f8a9cfdc055 (bug 857599) for Mn failures on a CLOSED TREE.
+75406eaf8351 Backout changeset 5abbf6fd5466 (Bug 830100) for sctp_unittest failure ON A CLOSED TREE r=ryanvm
+9a624a23c88a backout 4149244358fd and 5ad0e08799d9 (bug 851520) for b2g bustage on a CLOSED TREE
+974726290de1 Backed out changeset 9983874bfa63 (bug 854467) for bustage on a CLOSED TREE.
+7a7d890a2253 Backed out changeset 3ae03ecf8b5e (bug 852366) because of mochitest-1 crashes
+8cf0185087b2 Backed out changeset 92c2f24cb6ff (bug 854336) because of mochitest-1 crashes
+d65cf43c4717 Backed out changeset 9c080ffa640f (bug 853551) because of mochitest-1 crashes
+81dc5a203ac2 Backed out 13 changesets (bug 838467, bug 849739, bug 749086) for Marionette failures.
+ca4c54c81073 Backed out changeset dc4066373f5a (bug 849399) for failures in test_bug451286.xul
+091fe3675996 Backed out changeset f916756bbcbd (bug 809733) for failures in browser_social_chatwindow.js
+488db939e3e1 Backout changeset a54f620cf84c (bug 843445) for build failures
+230b1e362be4 Back out f55d9235d5a0 (bug 859200) for test_ril_worker_icc.js failure
+7e69fd152f94 Back out Bug 810644 part 1 to fix b2g test_closeOnGC.html orange on CLOSED TREE
+8507944b6211 Back out Bug 810644 part 2 to fix b2g test_closeOnGC.html orange.
+180eaa7f6519 Backed out changesets d901d33dd142 and 48da1752622f (bug 729463) for robocop failures.
+ca1887b25c95 Backed out changesets ab64b048ad04 and 025d24d7fee8 (bug 734691) for leaks.
+a56bbca40488 Backed out changeset e5cf40b38bd7 (bug 859545) for jit-test failures.
+5a821a7b43ae Backed out changeset 35178de36bd3 (bug 855704) for frequent mochitest failures.
+c5aad24d91dc Backed out changeset 664a2230e5c7 (bug 843793) because of Marionette test failures
+d61fd3898e79 Backed out changeset d0d75e76d41f (bug 857417) for crashes during tests
+3aab0275c08f Backed out changeset 6c40b2d396c6 (bug 836349) for a bad commit message.
+99cfae75ee7c Backed out changeset 1e01b8a81990 (bug 858674) for Windows bustage on a CLOSED TREE.
+61f0e35aab01 Back out Bug 788613 for breaking the build on Windows.
+7ff7a49bd2e6 backout bd072e286fc0 (bug 858617) for assertion failures in check-jit-test
+de4f34069146 Back out 314ce3068d94 (bug 855389) for browser-chrome bustage

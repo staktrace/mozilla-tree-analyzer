@@ -1,0 +1,19 @@
+Ignored 5 back outs that were backing out changes outside my range (524dabd865ff, a9042561f004, 754dc0c091a6, 27211859cb34, 6286b4578f14).
+The first three of these appear to not be tbpl-detectable (i.e. regressions in things that aren't tested on TBPL).
+
+Total backouts csets: 74
+Total csets backed out: 116
+Total pushes saved by stripping all backout and backed-out csets: 114
+
+Of the 114 csets backed out,
+* 37 belonged to single-cset pushes
+* 65 belonged to multi-cset pushes that were entirely backed out (16 pushes)
+* 14 belonged to multi-cset pushes where the csets were selectively backed out
+
+Reasons for backouts:
+Commit message: 4
+Build failures: 25
+Test failures: 36
+Leaks/talos: 5
+Premature landing: 1
+Unknown: 3
