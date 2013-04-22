@@ -14,5 +14,8 @@ for ((i = 10; i <= 17; i++)); do
 done
 popd
 
-javac -cp sts_util.jar BuildTimes.java
-java -Xmx2048M -cp sts_util.jar BuildTimes pushes.txt raw-build-data > build-time-table.csv
+javac -cp sts_util.jar BuildTimes.java CoalesceStats.java
+if [ ! -f "build-time-table.csv" ]; then
+    java -Xmx2048M -cp sts_util.jar:. BuildTimes pushes.txt raw-build-data > build-time-table.csv
+fi
+java -cp sts_util.jar:. CoalesceStats build-time-table.csv pushes-nobackouts.txt
