@@ -45,9 +45,12 @@ class CoalesceStats {
         int uncoalescedCount = 0;
         int noBackoutsCount = 0;
         int noBackoutsUncoalescedCount = 0;
+
+        int buildersSkipped = 0;
         Map<String, Long> avgTime = new HashMap<String, Long>();
         for (String build : builds) {
             if (build.indexOf( "_pgo" ) >= 0 || build.indexOf( "-pgo" ) >= 0) {
+                buildersSkipped++;
                 continue;
             }
             long total = 0;
@@ -89,6 +92,7 @@ class CoalesceStats {
             }
         }
 
+        System.out.println( "Skipped " + buildersSkipped + " builders due to PGO" );
         System.out.println( "Actual time taken: " + actualTime + ", in " + actualCount + " builds");
         System.out.println( "w/o coalescing: " + uncoalescedTime + " (" + percent(actualTime, uncoalescedTime) + "%), in " + uncoalescedCount + " builds");
         System.out.println( "w/o backouts: " + noBackoutsTime + " (" + percent(actualTime, noBackoutsTime) + "%), in " + noBackoutsCount + " builds" );

@@ -5,7 +5,7 @@ Total backouts csets: 74
 Total csets backed out: 116
 Total pushes saved by stripping all backout and backed-out csets: 114
 
-Of the 114 csets backed out,
+Of the 116 csets backed out,
 * 37 belonged to single-cset pushes
 * 65 belonged to multi-cset pushes that were entirely backed out (16 pushes)
 * 14 belonged to multi-cset pushes where the csets were selectively backed out
