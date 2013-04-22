@@ -14,7 +14,7 @@ echo "This data excludes all merge changesets and the changes that were merged"
 echo "Changesets landed: $(cat $FILE | awk '/class="parity[01]  id/ && !/hidden changeset/ { print $0 }' | wc -l)"
 echo " Number of pushes: $(cat $FILE | awk '/class="parity[01]  id/ && !/hidden changeset/ && /class="date"/ { print $0 }' | wc -l)"
 
-if [ ! -f pushes-nobackouts.txt ]; then
+if [ ! -f pushes-nobackouts-details.txt ]; then
     cat $FILE | awk -v FROM=$FROM -f inbound-csets.awk > pushes.txt
 
     rm pushes-details.txt
@@ -23,16 +23,19 @@ if [ ! -f pushes-nobackouts.txt ]; then
         hg -R $REPO log -r "reverse(children($next)..$push)" --template "{node|short} {desc|firstline}\n" >> pushes-details.txt
         echo "" >> pushes-details.txt
     done
-    echo "Please copy pushes-details.txt to pushes-nobackouts.txt and remove all backout changesets and "
+    echo "Please copy pushes-details.txt to pushes-nobackouts-details.txt and remove all backout changesets and "
     echo "the things they backed out. Then re-run this script to continue."
     exit 0
 fi
 
 if [ ! -f conflicts.txt ]; then
+    rm pushes-nobackouts.txt
+    cat pushes-nobackouts-details.txt |
+    awk 'BEGIN { first=0; last=0 } !/^$/ { if (first == 0) { first=$1 } last=$1 } /^$/ { print first, last; first=0 }' > pushes-nobackouts.txt
+
     hg -R $REPO update $TO
     find $REPO -name "*.rej" | xargs rm -f
     cat pushes-nobackouts.txt |
-    awk 'BEGIN { first=0; last=0 } !/^$/ { if (first == 0) { first=$1 } last=$1 } /^$/ { print first, last; first=0 }' |
     while read BACKOUT_FROM BACKOUT_TO; do
         echo "Testing push $BACKOUT_FROM..."
         BACKOUT_TO=$(hg -R $REPO parents -r $BACKOUT_TO --template '{node|short}\n' | head -n 1)

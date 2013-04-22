@@ -1,0 +1,1164 @@
+cad82c3b69bc Bug 861314: Prompts crash on 2.2. [r=bnicholson] [CLOSED TREE]
+
+9bef1ecd7ed3 Bug 862518 - Make sure the thumb of <input type=range> with fractional values is drawn at the correct position with Cocoa native theming. r=roc
+
+e1939f325abb Bug 860572 - Use Rooted<JSPropertyDescriptor> in XPCComponents; r=bholley
+49dbf1510125 Bug 860572 - Allow JSPropertyDescriptor to use Rooted; r=jonco
+
+6258cfdfe2d9 Bug 842224 - Make getCharNumAtPosition (a) return addressable character indices, and (b) heed full page zoom. r=longsonr
+
+041e81903b53 Bug 653001 - Replace about-logo.png with optimized version. r=fryn
+
+d9f4eb0e394e Bug 815715 - Send location change methods even if we're just moving inside the same document. r=bnicholson
+aa3760831c60 Bug 837132 - Remove 'remove' option from top sites page. r=margaret
+
+13aadb8d9df5 Bug 862462 - Make sure BluetoothAdapter unroots before destruction; r=mrbkap
+4b7551f945cc Bug 855062 - Add initialization function for DOMRequest FireSuccessAsync; r=mrbkap
+14810c6f3dde Bug 861980 - Change sockopt length to be a socklen_t; r=echou
+
+927fcd500c9b Bug 806046 - Try to fix intermittent failure browser_bug719271.js. r=test
+
+807f827f43e6 Bug 862106. Use Create*Client directly. r=nical
+79dbb1699208 Bug 862064; use PCompositable for tiled layers and add TiledContentClient. r=nical
+e39cf91fd52b Bug 861490, fix crash in MaybeDrawRoundedBottomCorners with OMTC. r=mattwoodrow
+
+dbc28a463297 Bug 857607 - Reduce log level when launching B2G desktop client with mozrunner. r=jgriffin
+
+843223330b5e Bug 838793 - Part 2: Move AboutHome update to foreground thread. r=lucasr
+cacd9189f531 Bug 838793 - Part 1: Convert AboutHomeContent to a Fragment. r=lucasr
+
+ee3e4ea1ea74 Bug 800805: Account for left border and padding when snapping in to text after reflow on zoom. [r=kats]
+3374dda8138b Bug 836565, Part 1: Make pinch gestures perform reflow-on-zoom operations only once to improve performance. [r=kats]
+
+51973ea57c60 Bug 850090.  Don't assert things about our stylesheets during unlink, since our state can be kinda inconsistent then.  r=smaug
+603143e31531 Bug 835643 part 4.  Put in place all the infrastructure to switch EventListener to WebIDL codegen.  r=smaug
+7d918701c596 Bug 835643 part 3.  Expose the ability to add WebIDL event listeners to an event listener manager via its API.  r=smaug
+55cad36868d8 Bug 835643 part 2.  Store an EventListenerHolder, not an nsIDOMEventListener, in nsListenerStruct.  r=smaug
+72c3a9deb098 Bug 835643 part 1.  Give CallbackObject an IID so that random things don't QI to it.  r=smaug
+a32cc1177c40 Bug 862388.  Fix test_bug328885.html to actually test things.  r=bholley
+
+6e5159fc2289 Bug 803719: Add a getClientRect API to CaretPosition and use it to maintain position for reflow-on-zoom feature. [r=kats,tn]
+
+089c532f32d1 Bug 860029 - Standardize Modelines in the JS Module. r=njn
+
+4afae2ce30c2 Bug 857073 - Simplify ChromeUtils usages. r=jmaher
+
+644e9c1856ce Bug 854085. Make thread asserts conditional on DEBUG not MOZ_DEBUG. r=jesup
+
+baec6e6659a8 Bug 857876 - If we're not storing source data, explicitly shut down the decoder when the image data is complete. r=seth
+
+51644264df6d Bug 846634 - Part 2: Move EXPORTS to moz.build; r=joey
+
+0627e8608a97 Bug 862493 - disable robocop tests that cause instability on panda; r=jmaher DONTBUILD
+
+0e0a0e66bf8b Bug 826851: Unit tests for Plugin Hang UI. r=bsmedberg
+
+e2c25a98cebb Bug 837390 - Profiler livelock caused by SA_RESTART restarting fork() syscall.  r=bgirard
+
+866528335dfc Bug 855024 - Better management of pull-only providers; r=rnewman
+7f74457ed102 Bug 830492 - Manually control WAL checkpointing during heavy I/O; r=rnewman
+
+47c5b47655c8 Bug 859065 - Avoid "command timed out: 1200 seconds without output, attempting to kill" by providing an inner xpcshell timeout of 5 minutes. r=jmaher
+
+f2ddcae0868a bug 861967: updater sets PLATFORM_VERSION part of URL wrong. r=snorp
+
+285b89e03ed7 Bug 862440 - Remove unused aboutReaderContent.html and aboutReaderContent.css. r=bnicholson
+
+640a0017c314 No bug; fix typo in header comment for gfxCallbackDrawable. comment-only, DONTBUILD
+
+13063c6cfcd6 Bug 857989 - Add Serif/Sans Serif font toggle to Reader Mode. r=lucasr
+
+ecdf77239aef Bug 861399 - Update pdf.js to version 0.8.47. r=bdahl
+
+0f2b019185f4 Bug 779336 - Replace DOMExpandoMap with a js::HashSet; r=bholley
+
+0536fbab2e8c Bug 854077 - Use radio buttons for "Do Not Track" options and add a neutral option r=ally
+
+e152843b366d Bug 857669: Remove unused traversal method. r=mounir
+2f322551642d Bug 855276: Diagnostic patch. r=bent
+
+d8b73ccd6725 Bug 829419 - Don't allow processing pending events while shutting down cache IO thread, r=jduell
+
+d23145d1cd5f Bug 847211: When reparenting style contexts, skip flex-item style fixup if our element is the root of an anonymous subtree. r=bz
+
+a1f7c708cf42 bug 862152: remove obsolete xpcom/tests/utils code, r=bsmedberg
+a99ad1b3fc24 Bug 703377: remove now-unused pref override functionality, r=dolske
+ba33b931fe94 Bug 862186: remove unused import from DebuggerUI.jsm, r=past
+11336b456004 Bug 851630: fix error in patch for bug 758288 that caused improper cancellation of key events in children of autocomplete textboxes, r=dao
+
+2248290342c9 Bug 861453 - Restore empty substs after bug 857557, but put them in a separate file, unlisted as a dependency for everything. r=gps
+
+2d71598ee2ea Bug 847596 - Paris binding for DeviceMotionEvent, r=peterv
+
+8bae422aed39 Bug 851782 - Dispatch an 'input' event when the 'type' of an <input type=range> is changed while a user is dragging its thumb. r=smaug
+
+e6bcebfff086 Bug 835716 - Enable building of WebRTC on Android by default. r=ted
+490573bc3a7c Bug 861637 - Add workaround for missing clone function. r=blassey
+15553a58337e Bug 861146 - Provide pthread_rwlock replacement for Android 2.2. r=jesup
+bc114c0cf8a7 Bug 815905 - Provide JNI as a fallback if OpenSLES opening fails. r=jesup
+a3fe83ef26e3 Bug 815905 - Dynamically open OpenSLES libary if available. r=jesup
+
+3fa225a54135 Bug 861281 - GC: Root the wrap object API r=terrence r=bholley
+
+5d40dce142e0 Bug 860180 - Regression tests. r=hsivonen
+e58f99cad251 Bug 860180 - Prefer UTF-16BE/LE to UTF-16. r=hsivonen
+
+62b1f1285a7c Bug 861182: Pull knownFeasibleHeight and knownInfeasibleHeight into ReflowConfig so they can be used outside of nsColumnSetFrame::Reflow(). [r=roc]
+df590a26baa6 Bug 861181: Separate interface from implementation for nsColumnSetFrame. [r=roc]
+
+d3a124561412 Bug 861790 - Fix unused function TypeIsFloatingPoint/TypeIsUnsigned in ObjectImpl.h. r=jwalden
+
+ff35a0194d2b Bug 843865 - Fix >> in code. r=bz
+
+be68c4410046 Bug 848935 - requestLongerTimeout for intermittent failure in browser_aboutHome.js
+
+1347f8fd9726 Bug 862228 - Move a RootedPropertyName to the proper place.
+
+5f2b80e214af Bug 857252 - testing-modules-dir is not defined. r=gps
+
+a9cb68645fed Bug 862154 - Fix paint-order-02.svg to work with svg.text.css-frames.enabled=true. r=longsonr
+
+65a8f7db2648 Bug 850332 - Use jemalloc inside mozglue. r=kats,r=mwu
+115239c324a0 Bug 861973 - Force STLport not to use its own allocator. r=ted
+
+dbb94129fec6 Bug 834513 - Part 1: Refactor WebAudioDecodeJob::GetJSContext into AudioContext; r=roc
+
+f90aa1228ce7 Bug 861897 - Cleanup nsComposeTxtSrvFilter to use nsGkAtoms; r=roc
+43a3de8abb2a Bug 861893 - Do not hold on to nsITextServicesDocument unnecessarily in the editor and the spell checker code; r=roc
+
+e30afdf18dd2 Bug 859657 (follow-up) - Bustage fix for opt builds on a CLOSED TREE.  r=me.
+
+02629c5c6d68 Bug 859657 (part 2) - Remove nsIMemoryMultiReporter.explicitNonHeap because it's more trouble than it's worth;  also remove the "explicit" single reporter.  r=jlebar.
+6ee0e740dc62 Bug 859657 (part 1) - Don't measure MEMORY_EXPLICIT in telemetry because it can cause pauses.  r=jlebar.
+
+7b7d888e7b7d Bug 861543 - x86-64: Use movl instead of movabsq for 32-bits immediates. r=nbp
+
+b5d6dca5794f Bug 861324 - Remove unneeded mDecoder null check after usage. r=joedrew
+
+ee39d8eb931f Bug 854319 - Part 2: Always use a ref pointer when dealing with MediaResource objects; r=cpearce
+7a0eb8b304eb Bug 854319 - Part 1: Call BeginDecoding before OnDecodeThreadStart; r=cpearce
+
+1770dc0c76b1 Bug 861099, remove mBufferIsOpaque. r=mattwoodrow
+
+a79abb6f9f8a Bug 858677 - Fix up code not built by SpiderMonkey to use the newly-changed deletion signatures.  r=bholley, r=billm
+4925a84c57cf Bug 858677 - Make the internal deletion operations not take a strictness argument and a Value*, but rather take a JSBool* -- and let callers handle the property-couldn't-be-deleted (but no error occurred) case.  r=jorendorff
+5100f9d172cf Bug 837950 - Import test402 source files.  r=jwalden
+
+e1549b50183f bug 860027 - remove XPTIInterfaceInfoManager::EnumerateInterfaces() r=bsmedberg, bholley
+eb7b48e7e7cb bug 860027 - remove nsXPConnect::mInterfaceInfoManager r=bholley
+dffc3d85b072 bug 860027 - remove nsXPConnect::GetInterfaceInfoManager() r=bholley
+15e370eefa9f bug 860027 - export a header declaring XPTInterfaceInfoManager r=bsmedberg
+22369bfc5a25 bug 860027 - nuke the interface info super manager r=bsmedberg
+
+eee1831a1094 Bug 859718 - Don't assume we have mImageRequest in RasterImage::IsDecodeFinished. r=joe
+
+8a1a8d3b0a3c Bug 861731, remove redundent Connect, Attach call. r=nical
+
+76ba09dd8b7b Bug 859586 - Remove {Start,End,Fail}DocumentLoad notifications (r=felipe)
+
+1bcb465f740f Bug 859584 - Fix about:home thumbnail issues. r=lucasr
+
+37fd7284be3a Bug 860994 - Fixup intermittent context menu failing tests
+
+31ee1812897a Bug 856303 - Paris binding for MouseScrollEvent, r=peterv
+ab92fa556938 Bug 856363 - Paris binding for TouchEvent, r=peterv
+af29b4e52406 Bug 847598 - Paris binding for NotifyPaintEvent, r=peterv
+
+104dba28c06f Bug 859512 - Do not use StackFrame.exec.fun after it may be relocated; r=luke
+
+39a721ec64e7 Bug 850841 - Fix marking of JSD2 state during minor GC; r=jorendorff
+
+a9ceb9829361 Bug 860667 - Pass $(DEFINES) and $(ACDEFINES) to embedjs.py. (r=till)
+ff2020fbf277 Bug 860553 - Better spew for AliasAnalysis. (r=dvander)
+8904f1948e49 Bug 860997 - Record shapes instead of object identities to avoid stubbing duplicates in ParallelGetPropertyIC. (r=nbp)
+7edc4948b471 Bug 846111 followup - Expand some stray tabs and fix typo in comment. (r=me) DONTBUILD
+
+5af257307e2c Remove elements from text node directionality map when they cease to have dir=auto, Bug 861610, r=ehsan
+38f62f6a7e09 Remove unnecessary calls to ClearHasDirAutoSet in AfterSetAttr, Bug 861607, r=ehsan
+eea05eb9a2c3 Add some assertions to DirectionalityUtils.cpp, Bug 861606, r=ehsan
+
+7da222e62d5f Bug 856368 - Convert some comments into proper doc-comments.  r=roc
+852f34e11e00 Bug 856368 - Inline the AllocateBy* and FreeBy* methods into the header.  r=roc
+88f523148180 Bug 856368 - Adjust memory reporter SizeOf methods accordingly.  r=roc
+c30972306259 Bug 856368 - Merge nsPresArena::mState into nsPresArena itself.  r=roc
+339911b031de Bug 856368 - Remove DEBUG_TRACEMALLOC_PRESARENA.  r=roc
+
+3b681cdd0bc5 Bug 848519 - Part 3: Replace services-common/preferences.js with gre/modules/Preferences.jsm in imports. r=gavin
+05cf87d0435b Bug 848519 - Part 2: Update Makefile.in and test harness. r=gavin
+ff628a483c47 Bug 848519 - Part 1: Move files. r=gavin
+
+9ed84d612a69 bug 847621 - follow-up to fix SOURCE url r=bsmith DONTBUILD because NPOTB
+
+d7f985396eee Bug 748495 - Don't call setCSSViewport unnecessarily. r=Cwiiis
+
+f649b79fd7e4 Bug 861909 - only add ARM support for clang and llvm on linux; r=glandium
+
+175149690cbb Bug 861372 - delete checks for FPU_IS_ARM_FPA; r=mjrosenb
+
+a6ffd1baf90a bug 857192 - use float instead of integer CSS pixels to track available space for image. r=bz
+
+d9a88189be9c Bug 85955 -Don't thumbnail capture when in snapped view.r=rsilveira
+
+c9662bed94d4 Bug 861748 - Disable synchronous scroll to top or bottom of the page when page bounce behavior is turned off. r=smichaud
+
+aad035133e33 bug 859715 protect against migration failures of social providers, r=markh
+
+ae4fcf3a2069 Bug 861796 - Fix crash in LibHandle::~LibHandle. r=nfroyd
+
+c626d0a4b3ac Bug 446041 - Force sharing printer settings in Linux because GTK doesn't have support for per printer settings. r=roc
+
+3a669532c1ec Bug 860544 - Typo in field name in Telemetry ping. r=froydnj
+
+f6507b43a880 Bug 861800 - Make UnwinderThread2 a bit less verbose.  r=bgirard
+
+605d892d2e51 Bug 861269 - GC: Continuing the rooting of XPConnect - Root XPCJSID.cpp r=bholley
+a4fe6ac7475b Bug 861269 - GC: Continuing the rooting of XPConnect - Root nsXPConnect.cpp r=bholley
+f0c70f3f73ef Bug 861269 - GC: Continuing the rooting of XPConnect - Convert id_ to idArg style arguments r=bholley
+
+fa1a9fa71db4 Bug 861141 - Connect Breakpad on Android to faulty.lib's mmap interface.  r=glandium,ted
+
+eb95b49e094c Bug 861857: TI: Fix testing the intersection between two types, r=jandem
+
+0aab2bb76b45 bug 819734 - Token Bucket for Network Requests [a/b test] r=honzab
+1d2790a22f3d bug 819734 - Token Bucket for Network Bursts part 2/2 [windows timers] r=honzab
+ecf37b2b9a96 bug 819734 - Token Bucket for Network Bursts part 1/2 [base] r=honzab
+
+2e93879f1adb Bug 855190 - Use new async getCharsetForURI in /toolkit/components/places/tests/unit/test_bookmarks_json.js. r=mak
+
+626f981f90e6 Bug 850362 - reintroduce bug 842852 - localStorage optimizations, r=mak77
+8480e7da11d1 Bug 600307 - localStorage and sessionStorage implementation overhaul, r=mak77+smaug, sr=smaug
+
+644f16c3f87c Bug 861805 - Stop layers from snapping transforms for SVG content. r=roc
+
+deab88ac216a bug 861403 - fix mixing of device pixels with global display pixels in MoveClient and ResizeClient calculations. r=roc
+
+bd17606091d2 Bug 845596 - Keep track of free variables during syntax parsing, r=jorendorff.
+
+53c2e7b9753b Bug 843917 - Test.
+
+5da461e63f72 Bug 843793 - Throw specific errors when iframe is crashed or hung, r=mdas
+
+82f8115af316 Bug 838607 - Disable another click test, a=test-only
+
+cf860d3271ab Bug 856932 - Fix async scrolling of auto-positioned fixed position elements. r=nrc
+abc416eac56f Bug 856932 - Fix fixed margins on position:fixed hierarchies. r=roc
+
+1077b98a75f1 Bug 843917 - Don't call InvalidateBounds() in nsSVGTextFrame2; leave invalidation to DLBI. r=jwatt
+
+c05b48c25035 Bug 859630 - Use the PresContext's document in FindContentInDocument when the frame doesn't have an associated nsIContent. r=roc
+3b0cda3057df Bug 859526 - Null check parent frames when wrapping preserve-3d display lists. r=roc
+457ff5b67290 Bug 861042 - Manually invalidate frames with both opacity and svg effects, as this isn't caught by DLBI. r=roc
+8aeb4de5f470 Bug 857817 - Make AreLayerMarkedActive aware of preserve-3d transformed frames. r=roc
+
+b10100b29f19 Bug 859139 - Allow <input type=range> to keep its native styling when authors set its padding. r=mounir
+1a418f831f2c Bug 860701 - Check for error in nsRangeFrame::GetValueAtEventPoint so that we don't change the value of <input type=range> when we can't convert an event to a valid point. r=me
+
+dbb82c0a48e5 Bug 755240 - Allow Fennec axis locking behaviour to be controlled by a pref. r=kats
+
+5d549a8fc2eb Bug 853298 - Part 2: Make AudioNode an EventTarget; r=smaug
+dedbbce5235f Bug 853298 - Part 1: Switch the ownership model of audio nodes to be based the cycle collector with wrapper caches; r=roc
+
+1d031f4a22f5 Bug 854302 - [Buri][WIFI]Cann't disconnect WIFI when connect AP use WPS. r=mrbkap
+
+a03f74d92509 Bug 861557 - nsIClassInfo.idl references non-existent nsIClassInfo.h. r=jlebar
+7694941e13d8 Bug 861264 - Add support for options argument for OS.File.read method. r=Yoric
+fe71fc5d8267 Bug 860338 - Remove MOZ_WEBVTT. r=khuey, r=ted
+42a879409f18 Bug 852032 - Create a PlacesBackups.jsm. r=mak
+11366920290d Bug 843865 - Implement Networking Dashboard using webidl. r=bz
+
+32f6b90836a6 Bug 861127, refactor ContentClientRemote::CreateBuffer. r=Bas
+
+9854f6db382b Bug 857715: In testing/xpcshell/head.js, use 'uneval' to quote values passed to the child process. r=ted
+
+d31055321344 Bug 125082 - use GetChildren in inDOMUtils and inDeepTreeWalker to get native anonymous content, too. r=roc
+
+46906005efc8 Bug 846995 Part 3: Rename DOMSVGAnimatedTransformList and kill nsISupports r=jwatt
+218392354af1 Bug 846995 Part 2: Rename SVGAnimatedTransformList to nsSVGAnimatedTransformList r=jwatt
+b48e4bc0b1f1 Bug 846995 Part 1: Fix all the files that reference SVGAnimatedTransformList r=jwatt
+
+261d6997d1d1 Bug 861633: Fix typo in new TLS sync preferences introduced with bug 733642, r=bsmith
+
+2b156ae54c3e Bug 857884 - Use dom::EventTarget more in content/ and dom/ Part 3 r=Ms2ger
+
+7143c88f59dc Bug 861461 - Resolve this in sandbox.importFunction. r=bholley
+
+f5f730869f6a Bug 852400 - revert bug 739417 to support touchscreen on tara, r=mwu
+
+6ce50f99b680 Bug 857820 part.3 Drop <blink> support from HTML parser r=mrbkap
+141e48a6df7c Bug 857820 part.2 Drop <blink> support from editor r=ehsan
+acfaca07e5c9 Bug 857820 part.1 Drop blink effect implementation r=dbaron
+
+a777fa3031f3 Bug 854103 - Ignore the high bits of returnReg in js_InternalInterpret on x86_64 when it actually holds a bool. r=dvander
+a637a18d57bf Bug 462463 - Remove mddepend.pl. r=ted
+556eb9acc6b5 Bug 462463 - Add missing add_phony_targets.py file. r=me
+63d6c868147e Bug 860894 - Fix typelib.py after bug 462463. r=ted
+
+f1e5eb8741ee Bug 861188 - Fix empty transforms on svg elements. r=dholbert
+
+7d0026ff5d19 Bug 861592 - Make isContentEditable() in form.js not fail with null elements r=ttaubert
+
+f91e963cad33 Bug 861395 - Part 2: Still try to report exception if the exception reporter throws an exception. r=kats
+
+9a6b56a3f243 Bug 842186 - Replace use of jsval with JS::Value in dom/base.  r=jwalden
+5e0c8f29b023 Bug 860931 - Remove a bunch of deadwood autoconf defines.  r=ted
+
+3a62020b78ac Bug 861277 - Uplift addon-sdk's integration branch
+
+7973e5a69dc5 Bug 861325 - Use an optional NamedConstructor argument for HTMLAudioElement; r=bzbarsky
+
+6155cad4bea3 Bug 847279 - Remove extra mouse click in test_bug620145.html [r=dolske]
+
+ef802a6418f2 Bug 837835 - Reserve VM space at startup and free it when a crash happens, in the hope that writing a minidump will then succeed. r=ted
+
+3e2e383695cf Bug 860239 - Make Ion OSR a bit more robust against scripts with multiple loops. r=bhackett
+
+334da067051e Bug 848267 - Awesomebar loses correct tab selection, r=wesj, f=lucasr
+
+9022b73d427a Bug 860971, if changing the visibility changes contentviewer, don't try to proceed in nsFrameLoader::Show, r=bz
+
+2e57899e8053 Bug 846967 - Allow ParseContext chain to have contexts from different parsers, r=jorendorff.
+
+1fd472d11b4c bug 838239 - check for possible DPI change when restoring content from browser history. r=roc
+a0e3cd48151b bug 861112 - (widget/gtk2) scaling from display to device pixels should only apply to top-level windows/dialogs/popups, not to child or plugin windows. r=roc
+
+278d87108cb0 Bug 861246 - Fix async scrolling of fixed layer margins. r=nrc
+
+7f896188292b Bug 861395 - Part 1: Log the `cause` exception that we report to Socorro. r=kats
+
+ab6e995676bd Bug 859257 - include jscpucfg.h in NumericConversions.h so DoublePun definitions are correct; r=Waldo
+8c302ab916b3 Bug 859367 - make xpt.py use unpack_from instead of unpack; r=ted
+efaa46a0e3e6 Bug 860457 - use uintptr_t instead of unsigned long in celldata.h; r=dholbert
+
+b0af4212cb8b Bug 861064.  Root WebIDL dictionary Init.  r=smaug,terrence
+4f911913dadf Bug 860591.  Install WebIDL quickstubs for event interfaces as needed.  r=smaug
+
+ebbf1484ca37 Bug 839956 - Size and position text decorations on SVG text correctly when a font size scale factor is in effect. r=roc
+
+4887d47d1f25 Bug 854788 - Add a missing recursion check on Proxy::objectClassIs. r=m_kato, r=Waldo
+0867fa1dfe4b Bug 857836 - Assertion failure: paTypeObject->getPropertyCount() == NumFixedSlots, at builtin/ParallelArray.cpp. r=bhackett
+ffa16f20870a Bug 853707 - Fix bogus assert in StaticBehaviour::SetOwner. r=joedrew
+fd6c7792b048 Bug 673875 - Reenable guard for bug 770626 when swipe animations are disabled. r=smichaud
+366e6a39d71a Bug 673875 - Reproduce bounce behaviour when reaching top and bottom of documents. r=smichaud, r=felipc
+afb6e4e2d67d Bug 854614 - Root result and argument JS::Values. r=bz
+9868af21ad14 No bug - Fix typo.
+
+f664c87a974a Bug 848935 - Skip spurious load events for intermittent failures in browser_aboutHome.js
+
+75e216c59813 Bug 860033 - un-generic-ify _showExceptions, r=gavin
+
+62db06ab5e42 Bug 738818 followup: remove now-unused portions of test
+
+43592a61a366 Bug 861073 - Add configure check that --with-android-version is at least 9. r=glandium
+
+fe1999ee55af Bug 861139 - Fix the return of a floating point value from an ARM asm.js entry. r=mrosenberg
+7fb4bd994bdf Bug 860892 - IPC failure handling in CompositorChild and ShadowLayers. r=jmuizelaar
+c7fc583deeb3 Bug 859158 - Remove unneeded ifdef DEBUG_joe. r=joedrew
+f81774f097c3 Bug 859158 - Removed unused ifdef DEBUG in imgRequest.cpp. r=joedrew
+9aac7a9d61be Bug 858578 - Update bundled libpng to version 1.5.15. r=joedrew
+
+f36ce9b95a0c Bug 850442 - Part 5 - Rename nsGeolocation to Geolocation. r=bz
+23e907c7c106 Bug 850442 - Part 4 - Make nsIDOMGeoGeolocation non-scriptable. r=bz
+37b472c847b1 Bug 850442 - Part 3 - Convert callbacks, Geolocation and Position. r=bz
+394ca10bb287 Bug 850442 - Part 2 - Convert PositionError. r=bz
+cbfbde1ca247 Bug 850442 - Part 1 - Wrap nsGeoPosition and nsGeoPositionCoords into Position and Coordinates. r=bz
+
+47e42a3aebe9 Bug 858809 - Tests for _saveSortedEngineList. r=gavin
+cf2307b4ccd4 Bug 858809 - Don't wait until shutdown to save search engine order. r=gavin
+45a191a4e3fb Bug 838368 - Remove unused modules. r=mfinkle
+f900dd273053 Bug 861005 - Get rid of Fennec FormAutoComplete component. r=mfinkle
+9a84b4562333 Bug 730445 - Add UI to specify a default search engine. r=mfinkle
+
+ed2a79a01127 bug 847621 - HSTS preload list: be more careful about dropping sites r=cviecco sr=bsmith DONTBUILD because NPOTB
+
+0dd127fed18a Bug 858789 - CSP should use the spec compliant pref to determine what parser to use for apps (r=jst)
+
+c0bda1b44155 bug 859101: tar Cannot open: File or path name too long when for test_document.getElementsByName-newelements.html.json and test_script-IDL-event-htmlfor.html.json - shorten imported w3c tests. r=Ms2ger
+
+bbec3b84cf8b Bug 853774 - nsBulletFrame should handle its requests more safely. r=tn
+
+16b7c4a657df Bug 855335 Patch 2 - Signaling fix warnings format-extra-args and format-security r=jesup
+
+cfabb78fc101 Bug 850489: Preferences screen scrolling in blue [r=mfinkle]
+
+1625ba632d1b Bug 860104 - Temporarily disable test due to frequent orange, a=test-only on a CLOSED TREE
+
+a4ee183c4c25 Bug 848935 - catch Task exceptions for intermittent failures in browser_aboutHome.js
+
+dce64e93ed0c Bug 852955 - Disable dynamic toolbar when accessibility features are enabled. r=kats
+
+2d46d1476514 Bug 851658 - Fix test_proximity_change intermittent failure; r=jgriffin
+
+36cd103a646d Bug 859779: fix i386 msg{ctl,snd,rcv,get} calls. r=jesup,dhylands
+
+39c8b2836e70 Bug 861095 - B2G MMS: handle MMS message in NotifyCursorResult() as well. r=mounir
+
+eb32f40fed8e Bug 844490 - Increase timeout for all WebAPI telephony tests, to fix intermittent timeout failures; r=jgriffin
+
+82ee824d2ffb Bug 830197 - Check visibility of the element before typing. r=mdas
+
+70f7ccdb5a98 Bug 856848 - Fix thread crash r=ehugg
+
+4f73b608bfd5 Bug 841285 - Increase timeout for alL SMS WebAPI tests, to fix intermittent timeout failures; r=jgriffin
+
+a531152c12ec Bug 861132 - upload new talos.zip to capture tresize adjustment to time collection. r=kmoir
+
+750205f3566b Bug 860817 - ensure we pull minidumps from android to the correct location on the host machine. r=ted
+
+5a92cfb2d1c3 Bug 855240 - Don't allow CSS viewport changes to happen on MozScrolledAreaChanged. r=kats
+
+0d31afd775a0 Bug 850252 - Remove Off-Main-Thread XPCWrappedJS refcounting from nsHttpConnection. r=mcmanus
+
+d1ebffdd1d65 Bug 810644 part 2.  Eliminate the now-unused CallEventHandler.  r=smaug, sr=peterv
+1889e0d8372f Bug 810644 part 1.  Switch setTimeout and setInterval to using WebIDL callback functions.  r=smaug, sr=peterv
+
+10f5180c8d25 Bug 860952 - Add error site information to unexpectedCallbackAndFinish callback r=jsmith
+
+76c3843d0c31 Bug 796005 - Add telemetry for XUL cache being disabled, r=smaug
+
+6182422bae59 Bug 860764 - Read profiles.ini properly during crash detection for marionette b2g unittests, r=jgriffin
+505c6b2c7f66 Bug 860773 - speed up crash detection for b2g marionette emulator tests, r=jgriffin
+
+1c690be31939 Bug 861178 - Don't purge dist/ data during the MOZ_PROFILE_USE pass of a PGO build. r=ted
+e8fc37e73844 Bug 860371 - Remove dist/bin when starting a build. r=gps
+d66ae80ddbcc Merge m-c to inbound.
+
+d954dd75a61b Bug 859447 - Setting popup doesn't display properly. Second landing, first had an empty patch! r=mbrubeck.
+
+f41f0742351b Bug 859805 - Fix bustage.
+
+b023bbaffecf Bug 859179: Support large strings by fragmentation r=tuexen
+dd9e94fd401f Bug 859774: change DataChannel readyState names to match spec (capitalization) r=smaug
+
+524dabd865ff Bug 853364 : Backout bug 648730 to fix SIGBUS at startup (symbols clash) on OpenBSD after bug 648407. r=glandium
+
+9e05e97946d9 Bug 857596 - Remove fileid leftovers from hg mq screwup. r=me. DONTBUILD
+
+2e667c0efaa5 Bug 859446 - Fix GCC warnings from baseline compiler merge. r=bhackett
+
+1165f67ccfb5 Bug 853551 -  Implement the doppler part of AudioPannerNode. r=ehsan
+76166b14908a Bug 859805 - Make libcubeb work on Android 2.3. r=kinetik
+
+43acb3f9b06b Bug 850253 - Remove Off-Main-Thread XPCWrappedJS refcounting from KeyGenRunnable. r=jedp
+
+25323c442d1a Bug 858097 - Fix StackFrame::epilogue to check |this| is an object to avoid OOM crashes. r=jwalden
+4c0d13ce4c4a Bug 859257 - Mark DoublePun values in ToIntWidth as volatile to work around a Clang bug. r=jwalden
+
+93f9dc06b4c5 Bug 825928 - Fix a compilation error with old compilers. r=bas
+9461d02ac47d Bug 860291 - Fix options check in osfile_async_worker.js. r=froydnj
+9ee76e6261e6 Bug 832946 - Ignore numbers start with '#' or '*' and end with '#'. r=gwagner
+0614d7cadd76 Bug 810091 - B2G MMS: Don't download message twice on receiving duplicated notification. r=vyang, r=gene.lian
+066f653f7743 Bug 448945 - Add additional font sizes to minimum font size list. r=jaws
+
+0984b5e72dc8 Bug 823803 - Manage two server sockets (RFCOMM/EL2CAP) in BluetoothOppManager, r=mrbkap, r=gyeh
+c41e47d57607 Bug 823803 - Add L2CAP/EL2CAP Socket support, r=qdot, r=gyeh
+
+954c25a05631 Bug 860777 - Part 2 - Root WrapperFactory.cpp r=bholley
+4eef306e0156 Bug 860777 - Part 1 - Root XPCWrappedJSClass.cpp r=bholley
+e2344b2249db Bug 860311 - GC: More rooting in XPConnect r=bholley
+a409636a0f32 Bug 860704 - GC: Comment says RawT converts to RootedT r=terrence
+
+006605c1ccc5 Bug 858655 - Add missing DebugScopes::onPopStrictEvalScope call for baseline frames. r=djvj
+
+4078fd282b4d Bug 823375 - Don't build or try to link NEON libs when the target doesn't support it. r=glandium
+
+f26cd5d8fe7f Bug 823999 - Add logging to the Contacts code to diagnose intermittent failure.
+
+0b32af5340c3 Bug 859727 - Should set force to FORCE_NONE after Sco is disconnected, r=echou
+
+6d4badbe3db2 Bug 802240 - Expose an API to mmap the underlying file for a library loaded by faulty.lib. r=nfroyd
+214cafc09b49 Bug 844016 - Move webapprt locale files. r=Pike
+
+7bf4a91d224f Bug 844928, smarten up content client/host texture creation. r=nical
+f2ab85125928 Bug 844928, remove PTexture. r=nical
+
+17f9958f5d99 Bug 854812 - Do not allow email with sub-domains or tld starting or ending with a '-' in <input type='email'>. r=mounir,khuey
+
+46c36b300617 Bug 860653 - Make paint-order work on SVG text with layout.svg.css-frames.enabled. r=longsonr
+
+c81138a2c6ad bug 853252 - check for changed backing scale when we receive a windowDidChangeScreen message. r=smichaud
+
+5bc732a49eae Bug 854790 4-2/4: test cases for filtering messages by threadId. r=gene
+226521477f7d Bug 854790 4-1/4: refactor test_filter_mixed.js so that we have multiple messages in one thread. r=gene
+f81432f8494f Bug 854790 3/4: RIL. r=gene
+9413f23d5cd5 Bug 854790 2/4: DOM. r=mounir
+15acf0c7597c Bug 854790 1/4: Support filtering mobile messages with thread id. Interface changes. sr=mounir
+
+ee95ad865eab Bug 859830: determine Android API level through android/api-leve.h instead. r=glandium
+
+4eeaa421a08d No bug. Remove .orig files, r=njn, DONTBUILD
+
+d56c6bca1e56 Bug 846992 - Don't assume last video frames in media's timestamp covers all of audio overhang. r=kinetik
+
+114cd1c255f6 Bug 860918 - Disable the mozContact constructor if the dom.mozContacts.enabled is not set. r=gwagner
+
+62e3246ae340 Bug 856627 - Add stubs to handle ListBase GetProp invoking native getters.
+
+c0e95d291680 Bug 859601 - mozSetting API - return undefined if the API is unsupported on the platform, not null. r=bent
+
+fb81cc5b400e Bug 859595 - Implement the alternate names for AudioBufferSourceNode, AudioContext and AudioParam; r=bzbarsky
+
+0bf61e46bfae Bug 861041 - Fix -Wunused-function error in XPCQuickStubs.h. r=bz
+378a5b44cd06 Bug 861032 - Fix -Wreinterpret-base-class warning on Codegen.py. r=bz
+
+13c33b6d787d Bug 856108 - Port static analyses to clang, part 3: Remove NS_STACK_CLASS. r=bsmedberg
+ece8b0253775 Bug 856108 - Port static analyses to clang, part 2h: use MOZ_STACK_CLASS everywhere else. r=bsmedberg
+2a343ec4a75c Bug 856108 - Port static analyses to clang, part 2g: use MOZ_STACK_CLASS in xpconnect. r=bholley
+3a772aaaa017 Bug 856108 - Port static analyses to clang, part 2f: use MOZ_STACK_CLASS in xpcom. r=bsmedberg
+8b5bc945e72f Bug 856108 - Port static analyses to clang, part 2e: use MOZ_STACK_CLASS in layout. r=mats
+abc42da07933 Bug 856108 - Port static analyses to clang, part 2d: use MOZ_STACK_CLASS in gfx. r=roc
+250fc9026b5a Bug 856108 - Port static analyses to clang, part 2c: use MOZ_STACK_CLASS in editor. r=ehsan
+a0d3abbee125 Bug 856108 - Port static analyses to clang, part 2b: use MOZ_STACK_CLASS in dom. r=Ms2ger
+772ef35c06d3 Bug 856108 - Port static analyses to clang, part 2a: use MOZ_STACK_CLASS in content. r=bz
+d565aefe20b9 Bug 856108 - Port static analyses to clang, part 1: stack-class. r=ehsan
+
+e41c1fc65901 Bug 860222: use our own isascii() for sanitizing TURN passwords r=glandium
+e83aae42ee28 Bug 860920: remove moz.build files from deleted source directory media/webtrc/trunk/src r=gps
+
+b98b24f28623 Bug 856042 - Tighten up sanitization of arguments to the Contacts API. r=bz r=gwagner
+
+caede81ef8cf Bug 861021 - Mark AudioBufferSourceNode.playbackRate as not-addrefed; r=bzbarsky
+
+7095efa510c2 Bug 860108 - Clone starting repo for b2g desktop mochitests, r=ahal
+
+2b504b52c50b Bug 860978 - Fix compile error due to warnings as errors in gstreamer backend on Fedora 16, GCC4.6.3. r=edwin
+
+59360cb3396f Bug 856358 - Follow-up, fix UUID mismatch in ContactManager interface.
+
+50dd603fe81c bug 861003 - Always use BasicTextureImage for YCbCr texture uploads. r=bas
+
+350baac4bbdb Bug 860102 - Rooting hazards in asm.js. r=luke,terrence
+
+fe2fe1ad36d9 Bug 860442. Delete the gralloc buffer even when we don't have a PBufferParent. r=nical
+
+c4bac10ee49e Bug 858231: Fix typo in NSS version requirement: 3.15 not 3.5, r=me
+
+0857f2bc8f8a Bug 858231: Upgrade to NSS 3.15 BETA 1 and adjust security/build to work with new NSS directory layout, r=bsmith
+
+3135a6091d4c Bug 847837 - Add some Samsung Gingerbread devices to stagefright blocklist - r=bjacob
+
+0a06b9069085 Bug 860466: Properly deal with SharedTextureHostOGL. r=nical
+
+058c640a3799 Bug 789593 - Clone typed arrays by cloning their buffers and only saving construction parameters. r=jorendorff, bent
+
+42babc8d9d82 No bug, removed commented code, r=nical, DONTBUILD
+
+ab0974ead030 Bug 856358 - Remove ContactProperties types from window. r=gwagner
+
+aa2d9eb84633 Bug 860886 - Make MOZ_CC_LOG_DIRECTORY work again; r=mccr8
+
+3880c0cfd288 Bug 860683 - Switch winrt widget utils log output to ascii. r=bbondy
+17d705ba2d9b Bug 860683 - When running tests in immersive mode, connect firefox stdout to a metrotestharness pipe to route test output to mozilla test harnesses. r=bbondy
+
+55a6fc3b5f42 Bug 809558 - Turn on audiochannels for Android AudioTrack. r=kinetic
+
+ebcfc07b6315 Bug 860860 - followup: fix json.dump call and be more explicit about object ordering; r=gps
+
+c4c23b700b01 Bug 860745 - Check result of ScriptSource::substring. r=luke
+
+d989eab66df4 No bug - Fix warning spam, r=shu.
+
+1d30583cd42f Bug 850946 - Use light theme for Sync setup on tablets. r=sriram
+
+e329fecc259f Bug 855088 - Watch for 'arguments' variables declared within 'with' blocks, r=luke.
+
+9688317ad779 Bug 858800: Removes premature cleanup of Plugin Hang UI's browser-side IPC. r=bsmedberg
+
+881b429d35e9 bug 856479 remove dead code missed in addon manager work.  r=markh
+
+05730b9af975 Bug 850946 - Use light theme for Sync setup on tablets. r=sriram
+8ad8e9729731 Bug 858111 - Remove background color from app icons on about:apps. r=mfinkle
+
+c2943880a742 Bug 860779 - Enable two-finger horizontal swipes when swipe animations are disabled. r=smichaud
+d5f5223bc71c Bug 859601 - mozContacts API - return undefined if the API is unsupported on the platform, not null. r=bent
+8165938b2dd4 Bug 858689 - Sending an SMS fails on Android. r=mounir
+29a5fd2889f3 Bug 851128 - Introduce custom recognition for the double-tap gesture. r=smichaud
+ed313842afec Bug 850302 - B2G mochitests time out on tests using window.open. r=jlebar
+783f66376d65 Bug 793747 - Add app origin to install message. r=mfinkle
+
+2d4d6eea0dd6 Bug 852057 - Sort contacts correctly when givenName or familyName is null. r=gwagner
+
+71bf6bcba445 Bug 860860 - use json instead of simplejson in build-clang.py; r=gps
+
+dbf9ab7dec31 Bug 859486 - Add system property to enable the unloading of Wi-Fi drivers r=mrbkap
+
+4add88d3db69 Bug 854503 - Rename JS unwrapping functions. r=bholley
+
+e438d532b4af Bug 858783 - Check user-controlled asm.js flag. r=luke
+
+83b8038839f1 Bug 855402.  Don't try to write to the startup cache if there isn't one, and definitely don't start _thinking_ we've written to it.  r=ehsan
+e1fd922ead11 Bug 860551.  Fix instanceof for prototype-less interface objects to be saner.  r=dzbarsky
+fc32e1f944e3 Bug 860473 part 3.  Root ErrorResult::ThrowJSException.  r=evilpie,smaug
+df6981fad6a2 Bug 860473 part 2.  Root WebIDL dictionary ToObject.  r=evilpie,smaug
+dfa9337d57ed Bug 860473 part 1.  Root WebIDL dictionary ParseJSON.  r=evilpie, smaug
+
+f85629692c59 Bug 823644: Text appearance for about:home. [r=mfinkle]
+b225cfbfda52 Bug 848961: Cleanup font-sizes in Android UI. [r=mfinkle]
+c6e7a7888876 Bug 850927: Redundant doorhanger layout xml file. [r=mfinkle]
+13606f290f3b Bug 823644: Base TextAppearances for the application. [r=mfinkle]
+50ddb97f5723 Bug 823644: Cleanup list-view style. [r=mfinkle]
+625041f40a97 Bug 823644: Remove the style named "Screen". [r=mfinkle]
+0b212f5b6bbc Bug 823644: Base theme for Fennec. [r=mfinkle]
+
+fff11ed20a04 Bug 835999 - add a topsites grid to the snapped view.r=mbrubeck
+
+270ad24960d3 Bug 859957 - Simplify [[DefaultValue]] security wrapping setup. r=mrbkap,gabor,ejpbruel
+
+737464b363f5 Bug 858084 - upload a new talos.zip to to fix the mozcrash issue. r=armenzg
+
+dfed7579f792 bug 851542 - Gamepad to webidl (with nsIVariant). r=smaug
+
+04dbe811e4a0 Bug 733642: Allow the user to enable any version of TLS that libssl supports, maintaining our current defaults, r=dolske
+882345a7a0a9 Bug 733632: Remove SSL/TLS Version UI, r=kaie, r=bsmith
+
+e82da4f52af8 Bug 860446: Properly readback from WebGL with B2G. r=bjacob
+
+6248d561a978 Bug 860463 - Ensure that we propagate Destroy() in the shadow layer tree on CompositorParent::ActorDestroy. r=nrc
+
+0a4e209fddea Bug 859031 - Fix NullPointerException in dynamic toolbar prefs getter. r=lucasr
+03f97f46000d Bug 859100 - Fix NullPointerException in BrowserToolbar.canToolbarHide. r=kats
+
+bdf42baf15d8 Bug 860095 - Adjust overlay button sizing and positioning, especially in RTL mode. r=mbrubeck
+
+bc4dd82e27cd bug 856777 - observe plugin-info-updated in nsPluginArray, not Navigator r=khuey
+
+c950d2ea4c5b Bug 819493: the Know Your Rights notification box has moved to be shown as default snippet on first startup. r=gavin
+
+146c6ca0aa6d Bug 855335 - Signaling - fix Wformat warnings in logging r=jesup
+
+65a30bc9da3c Bug 824965: Implement a method of getting correct CaretPosition from within anonymous content nodes. [r=ehsan]
+
+f496b4c13b04 Bug 859864 - remove NoSuchAttribute from errors.py, r=dburns
+
+78bdaf0577cd Bug 857413 - Use only one copy of GeckoInputConnection.InputThreadUtils; r=cpeterson
+5820dbc75b5a Bug 856657 - Change Go button at the same time as resetting input; r=cpeterson
+
+b16ed870d536 Bug 851379, part 4: Fix InitOffsets logging code to display horizontal and vertical percent basis, instead of just a containing block width. r=mats
+8de3dbbec45d Bug 851379, part 3: Add reftest with percent-valued vertical margin & padding on flex items. r=mats
+0e4434a4e7f3 Bug 851379 part 2: Make ComputeMargin, ComputePadding, and InitOffsets take a horizontal *and* vertical percent basis, so that we can resolve vertical margins and padding against containing block *height* in flex items. r=mats
+2cb63e38eeaf Bug 851379 part 1: Rename ComputeWidthDependentValue to ComputeCBDependentValue. r=mats
+
+53e7c851a6a7 Bug 853716 - Let the SMS protocol handler deal with sms: url without numbers r=baku
+
+703e4668b5c8 Bug 761442 - treat substitution and positioning lookups involving <space> differently. r=jkew
+8a0073ae1a45 Bug 761442 - don't use per-word shaping with fonts that use <space> in opentype lookups. r=jdaggett
+
+85f1d207f525 bug 817533 - failed system proxy lookups should not fallback to manual configs r=jduell
+
+2bb26d742f5f Bug 539427 - Save print resolution (DPI) and duplex settings between print jobs, if they're available. r=roc, sr=smaug
+
+1a5afa9ac9b9 bug 857383 - Don't try to print the app path for a partial build. r=gps
+dcf67f13c6bb bug 851542 - Gamepad to webidl (with nsIVariant). r=smaug
+34296a241492 bug 690938 - Get vendor id and product id on Linux for bluetooth gamepads. r=karlt
+
+73adad5ded33 Bug 858712 - Make AsmJSModule constructor explicit. r=luke
+
+1174a55338e8 Bug 860429 - Make NPPVJavascriptPushCallerBool a no-op. r=bsmedberg
+7fc45d104920 Bug 858900 - Poison JSContext. r=luke
+41f71920a83b Bug 858135 - Update LocalMediaStreamPlayback inheritance to use Object.create(). r=jesup
+c6dae4b543df Bug 857831 - Remove WBMP content sniffer. r=jmuizelaar
+5c5faa6e978e Bug 851667 - Handle SendPGrallocBufferConstructor() failure. r=jmuizelaar
+e4187e42329b Bug 840098. r=bz
+
+e1336dc1f555 Bug 859305 - Stop the browser app from panning the page when the user drags an <input type=range>'s thumb in the out-of-process case. r=smaug
+
+0bdd532aab3d Bug 853325 - Improve buffered time ranges accuracy with the GStreamer media backend r=doublec
+2209aa5267f5 Bug 853306 - Make the GStreamer backend play whitelisted codecs only r=doublec
+
+9358e56ef5dd Bug 860370 - Undo functionality change from bug 848973. r=roc
+
+b08b0dc81a5d Bug 860378 - Reconstruct SVG text frames sooner on DOM mutations. r=longsonr
+
+1381f98f22f5 Bug 851695 - PreCreate for BackstagePass. r=bholley
+
+70424739336f Bug 860631 - use $PYTHON instead of hardcoding python, fixes c-c on OpenBSD after bug 648980 r=glandium
+
+10f03c8cf438 Bug 848385 - Avoid recompressing a szip, and (de)compress in-place (but still with a temporary file). r=nfroyd,khuey
+80026f1feb06 Bug 857161 - Add aggressive flags to szip invocation on build slaves. r=ted
+1396c7a1fb99 Bug 857151 - Szip all libraries instead of libxul.so only. r=ted
+859361dea2f0 Bug 860371 - Remove dist/bin when starting a build. r=gps
+072adf9514eb Bug 854105 - Avoid gcc 4.7 complaining about array out of bounds in nsDiskCacheMap::WriteDataCacheBlocks. r=michal
+
+63f2b10a44e2 Bug 830100: Avoid deadlocks by sending packets asynchronously r=ekr
+18282c2c682d Bug 830100: Refactor transport flow to allow destruction on any thread r=derf
+
+b47c83333ec7 bug 856790 - make nsTArray::EnsureLengthAtleast() return void r=jlebar
+
+a3b06580a0da Bug 859230 - fix windowless docshell crash by returning object with strong ref to the browser.  r=bz
+
+16ff946d028c Work around bug 860503 with CLOBBER on a CLOSED TREE
+
+855fe8cf74d8 bug 856458 - Fixup metro mochitests r=mbrubeck,jimm
+
+5236e928b831 Bug 859858 - Fix for intermittent browser_bug664688_sandbox_update_after_navigation.js | Timed out while waiting for: window.location.href result is displayed after goBack(), browser_repeated_messages_accuracy.js | Timed out while waiting for: messages displayed; r=past
+
+bf9945a4935f Bug 859591 - 'Aborted transactions sometimes block all remaining transactions forever'. r=khuey.
+
+e05b20079419 Bug 859840 - use devicemanager in-tree for xpcshell. r=Callek
+
+b018c2f116e4 Bug 856477 - Root XPComponents. r=bholley f=terrence
+
+75acdef6ee50 Bug 860143: Check correct variable when setting host r=ekr
+
+76913343f8a6 Bug 836493 - part 2: eliminate now-unnecessary ServiceMainThreadInitializer; r=mak
+5727d59ae208 Bug 836493 - part 1: ensure that the initial reference to mozStorageService is obtained on the main thread; r=mak
+
+b0dd6a562281 Bug 857617 - Clean up nsEditor::InsertTextImpl; r=ehsan
+c134e27e7b72 Bug 857102 part 5 - Make NS_NewDocumentFragment etc. infallible; r=bz
+adf7f52a3f58 Bug 857102 part 4 - Make NS_NewCommentNode and nsIDocument::CreateCommentNode infallible; r=bz
+f3c020c2d68f Bug 857102 part 3 - Make various GetNodeInfo callers infallible; r=bz
+bf525be13359 Bug 857102 part 2 - Make NS_NewTextNode and nsIDocument::CreateTextNode infallible; r=bz
+7ebd1eece7f0 Bug 857102 part 1 - Make nsNodeInfoManager::GetNodeInfo infallible; r=bz
+
+5e1117b3ad7f Bug 856206 - PJS: Teach TI about transitive compilation. (r=jandem)
+0f1c94c46028 Bug 855901 - PJS: Improve recompilation of invalidated scripts by tracking callgraph. (r=dvander)
+286594159989 Bug 846111 - Part 3: Dispatch style ICs in Ion and ParallelGetPropertyIC. (r=nbp)
+f6e861adb467 Bug 846111 - Part 2: Teach VMFunction about parallel execution. (r=nbp)
+c84256093802 Bug 846111 - Part 1: Pure paths for looking up native slot properties. (r=bhackett)
+
+49b44cd1cdb1 Bug 823230 - (Part 2) Remember search terms and show them again when returning to the awesomescreen. r=mfinkle
+26bc83f8c555 Bug 823230 - (Part 1) Pass search term along with "keyword-search" notification. r=gavin
+
+9f10c5b3c418 Bug 792920 - clarify thread-safe use of nsITimer v2. r=bz DONTBUILD
+
+35f95339c44c Bug 859503.  Make unknown extended attributes into parse errors.  r=khuey
+d1c30a97d229 Bug 851917.  Get rid of the classinfo for HTMLObjectElement, HTMLEmbedElement, HTMLAppletElement, and rip out nsHTMLPluginObjElementSH.  r=peterv,johns
+
+58cc5c8a4e01 Bug 860012 - Complete hooking up errors from gsm_sdp to PeerConnectionImpl r=ehugg
+
+e30393f6f85b bug 854467 - fix nsIPluginTag enabled state API r=bsmedberg r=unfocused
+
+bc8ae226ad99 Bug 860104 - Cast prefs after interpolation, r=ahal
+
+f2af04ff7494 Bug 836132 - add more tests for x-frame-options ALLOW-FROM. (r=bz)
+e6a95781f51c Bug 836132 - update x-frame-options ALLOW-FROM parsing to conform to IETF internet draft. (r=bz,geekboy)
+
+b3f29dd91684 Bug 726716: Keyboard shortcuts for Fennec. [r=mfinkle]
+
+78e13e815d62 Bug 858893 - Follow-up to fix B2G bustage on a CLOSED TREE.
+
+b91378fabba2 Bug 859077 - Annotate crash reports with hresult failure codes when layer manager fails to initialize. r=bbondy
+
+9f92f6c2d0de Bug 858893 - Port DesktopNotification to WebIDL. r=Ms2ger
+64d2859ca6b1 Bug 858893 - Rename nsIDOMDesktopNotification to DesktopNotification. r=Ms2ger
+
+32c37babc5bf Bug 788613 - Dump config.log when configure fails. r=ted
+a4d23f9a3081 Bug 859763 - Remove more remains of the old linker. r=blassey
+43ec10ce6056 Bug 857557 - Avoid autoconf.mk being modified for new other-platform-specific variables. r=gps
+88d8ab81db89 Bug 858455 - Add system ffi flags when building jsapi-tests and gdb-tests. r=gps
+510ff4f297d7 Bug 858539 - Unbreak standalone js make install after bug 850074 and bug 851108. r=gps
+8b8b3f270ee6 Bug 860184 - Automatically use the x86-64 NDK toolchain when possible. r=ted
+
+4d5134b3cc6c Bug 858808 - Use String version of getBytes to accommodate Froyo; r=blassey
+4d7e1a76c63d Bug 858960 - Check for end of stream when identifying traces file; r=blassey
+
+a64adac42aa0 Bug 859447 - Fix for settings menu not displaying on tap. r=mbrubeck
+5f12be9cea2a Bug 859094 - Remove InvokeContextAtPoint selection overlay handling. r=fryn
+2662deb8dead Bug 859490 - When switching selection modes, hide all carets. r=bbondy
+f89a2ddffe06 Bug 858855 - Remove the code that sets form element focus in SelectionHandler now that the overlay has been removed. r=fryn
+6c8f2ba905b1 Bug 858590 - Remove auto positioning code from MenuUI. r=sfoster
+4d115df0d920 Bug 858526 - tests. r=ehsan
+7dc94dc6cd22 Bug 858526 - Use non-native text offsets in domWinUtils sendQueryContentEvent w/QUERY_CARET_RECT. r=ehsan
+
+d210097816a1 No bug - Fix incorrect merge of changes from bug 818940, bug 859576, and bug 738818. a=me
+
+afd9fc3d1c18 Bug 859749 - Fix building with --enable-dump-painting and --disable-debug. r=mattwoodrow
+463440611ad6 Bug 858550 - Don't transform fixed layer descendents multiple times. r=nrc
+
+645b63111263 Bug 839957 - Followup for review comment.
+
+0ff1755d6359 Bug 839956 - Choose SVG text font size scale factor without regard to devPixelsPerPx. r=longsonr
+dffb1a1c7873 Bug 839957 - Avoid inaccuracies when computing SVG glyph positions. r=longsonr
+
+7b3b57c68f99 Bug 852041 - Part 2: Use BookmarkJSONUtils.exportToFile in services/sync. r=rnewman
+d946c9ecdea6 Bug 852041 - Part 1: Use BookmarkJSONUtils.exportToFile in browser and toolkit components. r=mano
+
+f10884c6a91e Bug 858022 - Fix baseline compiler crashes on hardware without SSE2. r=dvander
+
+1348d28d70fc Bug 847194 - Protect mCodecStates from concurrent accesses. r=cpearce
+
+a2fbe8dc1ee1 Bug 858107 - GC: Some more rooting in XPConnect - misc rooting r=bholley
+53f30efb50b0 Bug 858107 - GC: Some more rooting in XPConnect - root XPCCallContext r=bholley
+
+684ed7a62fb6 Bug 847744: Part 5 - IPC for retrieveMMS. r=vicamo
+b6bb8c14385c Bug 847744: Part 4 - IPC implementation for MMS send(). r=jdm,vicamo,mrbkap
+f0727b1cd52d Bug 847744: Part 3 - IPDL change. r=vicamo,jdm
+17549598a514 Bug 847744: Part 2 - Use sms-* topic to notify mms observers. r=vicamo
+1bc493a828f6 Bug 847744: Part 1 - Create MmsService for content process. r=vicamo
+
+ee5ca214e87c Bug 825928: Land layers refactoring. r=jrmuizel,bas,nical,mattwoodrow,roc,nrc,benwa,bjacob,jgilbert,kchen CLOSED TREE
+
+f9d3e8cc8417 Bug 857599 - Clone profile for Marionette tests to prevent polluting the original profile. r=jgriffin
+
+621656e9b09d Bug 738818 part 3: Make changing currentEngine also change defaultEngine, including for about:home. r=fryn ui-r=limi sr=gavin
+ea44f501b0c5 Bug 738818 part 2: remove keyword.URL, r=gavin, sr=bz
+cc569e87074c Bug 738818 part 1: replace originalDefaultEngine with defaultEngine and make defaultEngine a settable. r=gavin
+
+fdc97a5d6356 Bug 856080 - Fix a ComputedTimingFunction leak in Layers. r=jrmuizel
+
+ea61e47d09ca Bug 855607 - B2G MMS: Notify user while retrieving expiried notification indication. r=vyang
+
+f58889f46660 Bug 859939 - Make AsyncPanZoomController::mLastEventTime unsigned to avoid overflowing. r=kentuckyfriedtakahe
+5d45fb2126d6 Bug 859935 - Make AsyncPanZoomController not assume the controller thread has a message loop. r=kentuckyfriedtakahe
+
+82a60cd87361 Bug 630197: Check for a removed device before presenting. r=jrmuizel
+cfcfb6f5d44b Bug 859791 - Part 2: Set the recording output file before the recording flag. r=jrmuizel
+8cb762f1b9fa Bug 859791 - Part 1: Listen for changes to the Moz2D recording pref. r=jrmuizel
+
+2e924c300aae Bug 846137: Don't call PR_Close() off STS thread r=mcmanus,smaug
+
+bbed45f6dbcc Bug 848560 (part 4) - Fix broken memory reporting on Fennec.  r=kats.
+
+cc4abdf71cb8 bug 855587. Pre-defined links should point to mozilla.org URLs, not mozilla.com. DONTBUILD. r=jimm
+
+08f54c265a09 bug 859418. Use 'firefox' instead of %APP% in branding links. r=jimm
+903ba2e70444 bug 854271. Make packaged versions of MetroFx include branding and use it correctly. r=bbondy
+76a0a767541d bug 859903. Remove a bunch of prefs that we're defining in metro.js that are previously (and more correctly) defined in branding. r=bbondy
+
+f3df7c77c465 Bug 842611 - Don't let nsOfflineCacheDevice::Init() create mozStorageService on non-main thread, r=michal
+
+8cd1bf407495 Bug 856163 - Part 5: Reduce preprocessing in WebApp. r=mfinkle
+b11be362d439 Bug 856163 - Part 4: Use gecko package for database classes. r=lucasr f=rnewman
+948b0710f727 Bug 856163 - Part 3: Remove GeckoAppInfo. r=jchen
+5966e48d3c63 Bug 856163 - Part 2: Move preprocessed code to AppConstants. r=kats,mfinkle,rnewman
+9518bed6e1b8 Bug 856163 - Part 1: Remove unused classes. r=wesj
+
+6f0f04f764a7 Bug 859997 - [Metro] Overlay plus button. r=mbrubeck
+efd8efab8212 Bug 859950 - [Metro] Overlay back button. r=mbrubeck
+
+0899fd8d1a58 Bug 692894 - Update Fennec's nsISidebar implementation to match interface changes from bug 691647. r=mfinkle
+
+1fa259b3c08c Bug 764638: Find in page can better use LinearLayout. [r=margaret]
+
+1e6a9891d364 Bug 859894: Reland on this CLOSED TREE with a CLOBBER.
+
+3ee806e6bf5c Bug 857236 - In-content Privacy > Tracking preference UI always shows the default state r=gavin
+
+260999a5d63b Bug 462463 - Stop using mddepend.pl. r=ted
+9c2c1d10ebb6 Bug 855276: Moar diagnostics.
+
+bcaa26984f9a Bug 851701, bug 851702 - reset image/js loading preferences, r=gavin
+
+6ceb44926370 Bug 851702 - Remove JS load and advanced preferences from the UI, r=gavin
+
+6b893ed61f92 bug 857906 progress indicator spinning on multipart motion jpeg r=duell sr=bz
+
+01ffdd61fd94 Bug 851253 - SimplePush: Only wakeup apps that have registrations. r=jlebar
+
+a703fa409b15 bug 851520 - add systemDefaultScale attribute to nsIScreenManager, and use it to decide when to remove browser.content.full-zoom prefs during UI migration if running on windows/hi-dpi. r=roc,adw
+
+322f2cc8d58a Bug 856425: Call onicecandidate with a null candidate immediately after setLocalDescription succeeds r=ekr
+
+b61950280061 Bug 851701 - Remove 'Load images automatically' checkbox from prefs, r=gavin
+
+e6d6b388ef60 Bug 859576 - aboutHome.js doesn't need preprocessor flag. r=fryn
+
+3c7ab35260ef Bug 853154 - Generate and root target JSScripts during MIR construction. r=h4writer
+
+a9042561f004 Backout 61e1edc0b6bf (bug 793735), 77014412cd4a (bug 793735), and 8c5aa269c3cd (bug 793735) for botching FHR data
+
+e1e464427681 Bug 855769: add pref to disable TURN if needed r=ekr
+915ad1e8a9bb Bug 855769: Wire up TURN support in RTCPeerConnection config r=jesup
+
+80be27b3bb36 Bug 813569 - Long string (ONE_MOMENT) not fully displayed in localized stub installer. r=bbondy - Windows stub installer only which is only built with the nightly - DONTBUILD
+
+9ac72a22012f Bug 854336 - Implement the playbackRate property of AudioBufferSourceNode. r=ehsan
+ee683fed039d Bug 852366 - Don't resample on the main thread. r=ehsan,roc
+
+f6ac21e1e966 Bug 855704 - Pair pushPrefEnv with waitForExplicitFinish in speech tests. r=smaug
+
+e13ccfc9b811 Bug 856440 - Use global preference object instead of a getter. r=nsm
+
+367df9ba7a51 Bug 859928 - Make profiles be saved in temporary directory for B2G.
+
+5e4ccad71f40 Bug 678392 - Add support for swipe animation as in Safari. r=smichaud,jaws,felipc
+
+52a3f6123009 bug 857923 fix some l10n issues, r=gavin
+
+de37ace9e98a Bug 859397 - Use "new Set()" instead of custom cloneSet function [r=sfoster]
+
+9a364c95741a Bug 859307 - [updates] wrong behavior when the manifest changes but not the packaged zip r=ferjm
+
+f59c6cbd3bc9 Update pymake. No bug.
+
+f272d2441a3b Bug 859303 - Signaling allow 63bit session ids r=jesup
+
+ad17721184ec No bug: Fix typo in comment in TabContext.h. r=me DONTBUILD
+
+f728c08664a4 Bug 736592 - Use getWeakReference instead of actual references to elements, r=jgriffin
+
+923bd52ea241 Bug 846634 - Part 1: Support EXPORTS[_NAMESPACES] in moz.build; r=gps
+
+82deda121d71 bug 859646 - fix b2g code that checks what infallible TArray::EnsureLengthAtleast() returns r=jlebar
+
+faf3b775851c Bug 859326 - Hide the New Window Mac OS X dock menu item in permanent Private Browsing mode; r=jdm
+
+5943881c5298 Bug 854799: Make image.src='' discard the image immediately even if the image is not in the document. r=jlebar
+
+f9f0cd9ffe78 Bug 749086 - 3/3: fix test cases. r=gwagner
+bc3fdf70603a Bug 749086 - 2/3: DOM & IPC changes. r=bent
+8318ed5d76af Bug 749086 - 1/3: Use DOMRequest instead of SmsRequest. Interface changes. sr=sicking, r=bent
+
+75cd6e698bec Bug 849739 4/4: RIL. r=gwagner
+625fef901d65 Bug 849739 3/4: IPC. r=bent
+109cadb6d2e2 Bug 849739 2/4: DOM. r=mounir,mrbkap
+128457f530f2 Bug 849739 1/4 - WebSMS: Replace GetThreadList() with DOMCursor based GetThreads(). Interface changes. sr=mounir, r=bent
+
+0ff31e921833 Bug 838467 5/5: test cases. r=gwagner
+94b4e7b38533 Bug 838467 4/5: RIL. r=gwagner
+11aa80c27732 Bug 838467 3/5: IPC. r=sicking,bent
+ac2be78cb5e7 Bug 838467 2/5: DOM implementation. r=sicking,bent
+f45aa3bf28cb Bug 838467 1/5: use DOMCursor instead of SmsCursor. Interface changes. sr=sicking, r=bent
+
+3146a645d19e Bug 856423 Signaling - check return codes from vcmCreateRemoteStream r=jesup
+
+ef9509eb9a4c Bug 857417.  Trigger a fatal assertion when wrapping a wrappercached and nsISupports WebIDL object which has the wrapper cache before the nsISupports in its object layout.  r=khuey
+4547d76ad828 Bug 859617.  Make WebGLContext's primary nsISupports its canonical nsISupports.  r=khuey
+7e4b8b95e0ab Bug 859675.  Return the canonical nsISupports from ToSupports(SpeechRecognition).  r=smaug
+
+0ce9544cbb8f Bug 858176 - Free global reference before detaching the JVM. r=blassey
+
+dc65fd307477 Bug 851470 - Attr to WebIDL. r=Ms2ger
+bb57393cb0d4 Bug 851470 - Rename nsDOMAttribute to Attr. r=Ms2ger
+5e12aede3338 Bug 844705 - Add comment to mReadFileThread. r=mrbkap
+
+d297feba6efa Bug 840612 - Part 2: make sure that networkmanager is ignored on pandaboard and emulator. r=jgriffin
+9c4cdebae3a5 Bug 840612 - Part 1: Don't close Marionette and debugger server socket when going offline. r=mdas,past,mcmanus f=jduell
+
+754dc0c091a6 Backout changeset d93ad2c96f01 (bug 844779) for browser crashes
+
+0bab8308f561 Bug 856384 - Make outer windows always be [[Extensible]]. r=bholley, r=till
+5afb4c8949a0 Bug 855605 - B2G MMS: Support auto-home in retrieve mode. r=vyang
+312ea5e42aef Bug 855513 - WIFI is not re-enabed when internet sharing is getting stopped and WIFI was enabled before. r=vchang
+e69693180dff Bug 786235 - Rewrite TURN stack to match RFC 5766. r=abr
+
+aee727a3f109 Bug 843445 - B2G MMS: provide nsIDOMMobileMessageManager.retrieveMMS() to retrieve MMS for the deferred retrieval mode, part-1:idl part. r=vyang, sr=sicking
+
+c1290c85d3db Exclude U+30FB KATAKANA MIDDLE DOT from the non-recommended characters that force IDN labels to be displayed as punycode. Bug 857490, r=jfkthame
+
+c2f229f146ba Bug 858803. Fix coordinate system of subdocument frame bounds. r=mattwoodrow
+7dd53c10924e Bug 854094. Assign the principal of the receiving page to remote MediaStreams. r=jesup
+51ea67404430 Bug 851445. When saving a frame scroll position, if we're in the process of trying to scroll to a saved scroll position, save the desired position instead of the actual current position. r=mats
+
+28c45607546a Bug 859597 - Narrow down the acceptable range for AnalyserNode.fftSize; r=padenot
+
+5133c67c0473 Bug 857596 - Remove file_id. r=ted
+2cc258f94ac0 Bug 855824 - Get rid of the lib.id file on Android. r=blassey
+39902799d11b Bug 855823 - Rely on breakpad finding file ids itself instead of relying on AddLibraryMapping caller to provide them. r=ted
+a12537d67765 Bug 858149 - Update breakpad to SVN r1143. r=ted
+84477df7c3d9 Bug 858149 - Add missing breakpad patch from bug 853851 and bug 779291. r=ted
+
+8ca4c43e5f64 Bug 858551 part 1 - Make JSScript::{baseline, ion, parallelIon} private. r=djvj
+
+471f0b0a58e1 Bug 836949 - Remove obj parameter from ValueToId. r=njn
+53273047c43e Bug 836949 - Remove InternNonIntElementId/FetchElementId. r=jwalden
+3fd383ca51c8 Bug 854614 - Root XPCLazyCallContext. r=terrence,bholley
+
+9cb8ac3f27a2 Bug 848973 - Make nsStyleDisplay::IsBlockInside() and friends work only on style structs for the passed in frame and document them. r=roc
+
+56ceb60c5d0b Bug 800996 - Add clear-selection action for start tiles, button transitions. r=mbrubeck
+
+09ff3bd0beb8 Bug 856566 Followup fix for crashreporter_win.cpp(1227) : error C2065: 'nullptr' : undeclared identifier (VS2008SP1/VC9) r=ted.
+
+444149388adb bug 859266 - respect devPixelsPerPx preference when calculating screen dimens on Windows. r=roc
+
+9aa0ec79f823 Bug 859200 - Part 2 : update xpcshell tests. r=vicamo
+47ca2082e784 Bug 859200 - Part 1: Get properties for RIL as boolean. r=allstars.chh
+
+2f10c3704fe5 Bug 857095: Fix SCTP build warnings (remove unused code) r=jesup
+
+8f3f965dc116 Bug 840285 - ARM support for Ion asm.js (r=luke,mjrosenb also landing some of doug crosher's patches)
+
+0e47bb858304 Bug 848560 (part 3) - Add support to about:memory for writing memory report dumps and reading gzipped memory report dumps.  code=nnethercote,maierman.  r=jlebar.
+560ce5e96e6b Bug 848560 (part 2) - Prevent memory reporters from being registered while about:memory's tests are running.  r=jlebar.
+dcf9107c1785 Bug 848560 (part 1) - dmd::ClearReports() needs to check if DMD is running before doing anything to avoid crashing.  r=jlebar.
+
+86a405c5f7af The test for bidi isolated subparagraphs should be > 0, not > 1. Bug 859093, r=roc
+
+421f600cc295 Bug 859128: Store SVGPathSegUtils::ArgCountForType's return-val in a signed variable, when we need to perform signed arithmetic with it. r=jwatt
+
+3f85757613d2 Bug 858691: Cleanup of DataChannel OpenRequest Message r=jesup
+7f28e9df56c9 Bug 858685: Fix byte order issue in DataChannel open message r=jesup
+
+54015df3731c Bug 859602 - Remove AudioParam.minValue/maxValue; r=bzbarsky
+913781187387 Bug 859594 - Remove AudioSourceNode; r=bzbarsky
+
+bcdc2f3743f9 Bug 691647 Part 2: remove Firefox Desktop implementation of removed nsISidebar methods. r=dolske
+3f2095fd4fc9 Bug 691647 Part 1: clean up nsISidebar interface by removing the non-standard addPersistentPanel/addPanel methods, and adjusting method arguments to avoid the use of string/wstring. r=jst, sr=sicking
+
+859e776239bf Bug 844573 - Detect textarea; r=cpeterson
+0b5b5d9a8761 Bug 844573 - Pass textarea input type; r=masayuki
+
+e0553df9a3be Bug 858674 - 'Tweak SQLite pragmas on mobile devices for space savings'. r=khuey.
+
+f49cb7d4b736 Bug 856202 - Alert service always cancels in Metro right away. r=wchen
+
+b85fe1022f98 Bug 857834 - Remove a warning in the startupcache. r=mwu
+
+ba80ed4de343 Bug 845362 - Signaling - Remove max calls per line r=abr
+
+36b8347bbdde Bug 857600 - Add a mach command for debugging using gdb; r=gps
+456c148977b3 Bug 859335 - Make sure that the chunk passed to WriteZeroesToAudioBlock is not null; r=roc
+
+434c6e694813 Bug 771975 - Remove -moz-prefixed gradients usage from rest of the tree. r=roc
+17c32b5e6461 Bug 771975 - Remove -moz-prefixed gradients usage from devtools. r=vporof
+200eab5fa1ed Bug 771975 - Remove -moz-prefixed gradients usage from b2g. r=fabrice
+
+9c2a43214d74 Bug 672811 -  Fix cert viewer usage display when using libpkix. r=bsmith
+
+9bda607c832d Bug 859021 followup: Add missing "f" suffixes for float-valued numeric literals, even where it's not strictly required by MSVC build warnings.
+1b86d1d851de Bug 859517: Move LayerManagerOGL::Initialize's helper-nsRunnable from function-scope to class-scope to fix build warning about ignored visibility attribute. r=BenWa
+53268e47c779 Bug 859482: Remove no-longer-used variable 'definedProperty' from xpc_qsDefineQuickStubs. r=bz
+167fecb7c112 Bug 859491: Fix Wreorder build warning for XPCJSRuntime constructor. r=bholley
+
+000c0c72fa82 Bug 836349 - Crashtest for bug 836349. r=abr
+
+35179d807373 Bug 834034 - Migrate persdict.dat when resetting Firefox, r=MattN
+
+e621a3f5db98 Bug 857345 - ExposeToActiveJS should not care about GC things in the Nursery; r=billm
+
+db1d5109d172 Bug 838380: don't crash browser on server 500 error r=abr
+
+b84b3d484636 Bug 856428.  Don't try to root an uninitialized value.  r=peterv
+729177f4b5c8 Bug 688691.  Warn when LenientThis actually causes us to not throw.  r=ms2ger
+d37a93af33a8 Bug 858671.  Make do_GetAtom infallible.  r=khuey
+d93dab0b19fc Bug 857645.  Make it possible to copy-initialize an nsCOMPtr<T> from an already_AddRefed<U> as long as U inherits from T.  r=ehsan
+fbc229932c90 Bug 765780 part 2.  Simplify the docshell code that was trying to enable script in subframes of designMode documents.  r=ehsan
+fc80e729a417 Bug 765780 part 1.  Stop disallowing script and plug-ins in designMode documents.  r=ehsan
+
+ad371c559524 Bug 857706 - Always allocate the self-hosting global in the tenured generation; r=billm
+
+fc8267682725 Bug 857135 - Remove Push components from android and desktop builds. r=jlebar
+
+ba48781b74e4 Bug 852787 - Do keyword DB lookup on background thread r=bnicholson
+deef421f9169 Bug 852787 - Skip keyword search if we have a URL r=bnicholson
+
+9133673bb8a4 Bug 857984 - mach mochitest now colorizes and prints failure summary; r=Ms2ger
+
+418df13c8385 Bug 858837 - Clean Contacts/Permissions/Settings build config files. r=khuey r=gwagner
+
+f971d287ba11 Bug 852704: Created Java enums to encapsulate data formerly stored in int constants. r=cpeterson
+79c23403daee Bug 859212 - Part 4: Remove unused HKB whitelist. r=jchen
+f1a739e3b5fa Bug 859212 - Part 3: Remove unused InputMethod names. r=jchen
+0c4b651f1a44 Bug 859212 - Part 2: Add Android stock keyboard and TouchPal to list of gesture keyboards. r=jchen
+d678fbf4ca2e Bug 859212 - Part 1: Move AwesomeBar's Swype logic to InputMethods. r=jchen
+fd139be90362 Bug 859229 - Part 4: Expand wildcard Java imports. r=kats
+4ccdf3167644 Bug 859229 - Part 3: Fix order of Java imports. r=kats
+566fa9aeec46 Bug 859229 - Part 2: Remove redundant Java imports. r=kats
+430d73385b08 Bug 859229 - Part 1: Remove unused Java imports. r=kats
+
+d8846d94297a Bug 857022 - Remove MOZ_MEDIA build-time define. r=ted
+c130590bbe8c Bug 857022 - Remove MOZ_MEDIA from parser. r=smaug
+d26b014749ba Bug 857022 - Remove MOZ_MEDIA from the layout module. r=cpearce
+9eb2df812835 Bug 857022 - Remove MOZ_MEDIA from content. r=cpearce
+
+4b9d6e04de88 Bug 857250: Remove unused typedef from IonCompartment::getVMWrapper. r=dvander
+
+42904845f8a2 Bug 856840 - Kill FindWrapper. r=mrbkap
+
+a7ec1554d481 Bug 854868 - Make srcdir and objdir paths match for in accessible/tests [r=tbsaunde]
+
+78457232611a Bug 859434 - Close thumbnail cursor in TopSitesView r=lucasr
+5549afae23a7 Bug 859425 - Move decoding/storing favicons to background thread r=kats
+
+39fbc0bcfa1f Bug 856739 - AwesomeBar.onDestroy does DB access on the main thread r=lucasr
+
+7f5c58257d65 Bug 858872 - Make Favicon service a little smarter about failed favicons r=bichnolson
+
+ba408deda605 bug 856349 - bustage fix because check-sync-dirs.py sucks landed on a CLOSED TREE
+
+9a584c882786 bug 856349 - fix review comment r=me
+68fc259ff3e0 bug 858896 - crash if sdnAccessible is constructed with a null node r=davidb
+
+f3e849b9ea6f Bug 858359 - Select and Select All context menu test adjustments. r=jimm
+cee523a84f6b Bug 858359 - Remove Selectable context menu options on input and textareas when there is text and no selection. r=jimm
+
+13943daf18f8 Bug 846275 - Intermittent problem on first install w/ win8 prompt not having firefox listed. r=jimm
+
+f9b061217ead Bug 840722 - Add an object which represents the viewport metadata in browser.js.r=kats
+
+f0c903d9ade4 Bug 600100, Part 2: Force a vertical resize even if our available height hasn't changed in anonymous blocks of a column set so we don't crash. [r=mats]
+
+8b0e28d37501 Bug 857640 - Fix to IntentionalCrash.h when getenv(XPCOM_MEM_BLOAT_LOG) returns NULL. r=bsmedberg
+3c6cd745bea0 Bug 856238 - Remove unused includes of the obsolete nsISupportsArray and nsIEnumerator. r=Neil, r=bsmedberg
+218c31e56f0a Bug 850275 - Adds some basic mochitests for offer media constriants. r=jesup
+a65e8af95d39 Bug 837051 - Store less buffers for video playback at MediaOmxReader. r=doublec
+beb76e040390 Bug 821877 - Browser Mochitest for CSP error logging to Web Console. r=msucan
+7c6c85096304 Bug 821877 - Log CSP errors to Web Console. r=bz
+
+98b3cdc05f18 Bug 833765 - Increase default sut timeout to 320 s during rc tests; r=jmaher DONTBUILD
+
+01f0d7b85857 Bug 856923 - Don't stop installing permissions if one of them has an invalid entry in the manifest. r=gwagner
+
+3250333a5e6c Bug 859349 - Saving .mozbuild/warnings.json fails if .mozbuild doesn't exist [r=gps]
+
+107e9db562b3 Bug 856349 - Update CLOBBER file.
+
+7684baafb4e3 bug 855389 fix social toolbarbutton structure to work with themes/etc, r=felipe
+
+e10b37c57162 Bug 839467 - Remove aCx parameter to CloneAndAdopt. r=mrbkap
+96a501b8fb84 Bug 839467 - Remove JSContext pushing in AdoptNode. r=mrbkap
+
+4b6761caea27 bug 854274 - Showing tab doc when clicking + r=mbrubeck
+
+4a2cc1ec0a50 Bug 856497 - Fix dynamic viewport sizing for margin changes. r=kats
+
+e59593a4baa1 Bug 857589 - Bail out without warnings when no plugins registry key is present. r=bsmedberg
+
+be4612e105b1 bug 856349 - remove useless SHORT_LIBNAME assignments r=glandium
+
+eebe60eebd95 bug 856779 - remove nsFrameManager::Init() r=dholbert
+b56af2a80519 bug 856779 - make nsStyleSet::Init() return void r=dholbert
+590e354d2750 bug 856779 - kill NS_NewPresShell() r=bz
+
+962ec303ced2 Bug 837323 - Automatically clobber when CLOBBER is updated; r=ted, glandium
+
+b1f9f2bcaf16 bug 857291 - fix 807678 regression of DNS::GetCanonicalName r=josh
+
+ba6d123bef6e Bug 856455 - Make nsCOMArray::SetCapacity return void; r=bsmedberg
+
+bbdc376f08fe Bug 838607 - Added explicit wait for element to appear before carrying on the test. r=mdas
+
+e19ace7a61e4 Bug 859267 - Compile time warning: js/src/jsapi.h has an extra comma, and a semicolon r=jonco
+
+27211859cb34 Backed out changesets 206bb159d62f, a6ab3e11f721, and a61aa08ab4ac (bug 837323) for frequent Windows fatal clobber errors on a CLOSED TREE.
+
+b8078621fb2a Bug 854458 - Use different focus navigation direction on horizontal tabs tray (r=mfinkle)
+aca8116e7b0b Bug 854458 - Implement keyboard navigation in TwoWayView (r=mfinkle)
+
+d6ac13733d48 Bug 851916 part 2 - createHTMLDocument() should work with no arguments; r=bz
+f2963140e620 Bug 851916 part 1 - Update dom/imptests/webapps/ and harness; r=Ms2ger
+
+11f52a74cac4 Bug 855514: IonMonkey: Add fastpath for JSOP_TOID for ints and doubles that fit into an int, r=jandem
+
+e7307ecec02c Bug 858833 - During an update, downloadAvailable is sometimes not reset to false after an error when it should. r=fabrice
+c390a34a1663 Bug 843445 - B2G MMS: Provide nsIDOMMobileMessageManager.retrieveMMS()  to retrieve MMS for the deferred retrieval mode, part-2:mms_service. r=vyang, r=gene.lian, sr=sicking
+c2ce06b2fa04 Bug 794410 - Prevent drag and dropping an about: tab to the download button downloading the associated XUL file. r=paolo
+
+0c181daeb66c Bug 814037 - Check overflow x and overflow y when doing visibility checks with Marionette. Atom updated. r=mdas
+
+88a6559918c8 Bug 858617: IonMonkey: When inlining box unknown inputs, r=nbp
+
+59e93bff76d4 Bug 845741: Set mUpdateFinished under lock r=roc
+
+9da2aa52affc bug 832524 pt 3 - use higher-resolution menuitem icons when available on hidpi display. r=dao
+70176237e018 bug 832524 pt 2 - position of the menu gutter rule in the app menu needs to be sensitive to resolution. r=dao
+
+f41142af1964 Bug 858619 - GC: Address rooting hazards in ctypes r=terrence
+
+7e3960f19a2d Bug 850127 (follow-up): use JS::Value instead and fix possible fennec build bustage. r=me
+
+09170e15685a Exclude U+30FB KATAKANA MIDDLE DOT from the non-recommended characters that force IDN labels to be displayed as punycode. Bug 857490, r=jfkthame
+2089d4146c21 Disable the check for mixed Simplified and Traditional Chinese characters when determining whether to display IDN labels as unicode or punycode. Bug 857481, r=honzab
+
+a66e4f7da75f bug 840881 - apply widget's default scale factor in widget/gtk2/nsWindow move & resize methods. r=roc
+
+68d6e055e7bb Bug 858204 - Enable libevent logging on debug builds. r=jlebar
+970623e75393 Bug 858393 - Avoid race condition creating directories in config.status. r=gps
+8d1e8c802365 Bug 857526 - Check webrtc target arch right after checking target OS, instead of after AC_OUTPUT, which is too late. r=ted
+06e05aaebe7b Bug 857147 - Fixup Android DIST_FILES after bug 648407 and bug 852950. r=ted
+
+6286b4578f14 Bug 854799 - backout changeset 0caf5937f8bc due to tp regression. r=roc
+
+6b2d5c652043 Bug 795495 - Addendum: Fix browser_google.js's data URI again. a=test-only
+1bfd5cff709b Bug 795495 - Use 32x32 search engine icons in HiDPI mode when available. r=dolske
+
